@@ -1,0 +1,11 @@
+E (and) lógico
+    - É a combinação de duas sentenças lógicas
+    - O resultado só é verdadeiro, se ambas forem verdadeiras.
+
+OU (or) lógico
+    - É a combinação de duas sentenças lógicas
+    - O resultado é verdadeiro se pelo menos uma delas for verdadeiro
+
+NÃO (not) lógico
+    - É a negação de uma sentença lógica
+    
