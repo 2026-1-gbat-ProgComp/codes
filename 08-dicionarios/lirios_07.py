@@ -36,4 +36,8 @@ print (f"O texto tem {len(palavras)} palavras!")
 contagem = {}
 for palavra in palavras:
     contagem[palavra] = contagem.get(palavra,0) + 1
-print (contagem)
+
+items = contagem.items()
+items_ord = sorted(items, key=lambda x:x[1],
+                   reverse=True)
+print (items_ord[0:5])

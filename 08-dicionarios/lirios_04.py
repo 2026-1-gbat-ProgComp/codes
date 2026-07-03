@@ -36,4 +36,11 @@ print (f"O texto tem {len(palavras)} palavras!")
 contagem = {}
 for palavra in palavras:
     contagem[palavra] = contagem.get(palavra,0) + 1
-print (contagem)
+
+mais_repetida = -1
+for qtde_rep in contagem.values():
+    if qtde_rep > mais_repetida:
+        mais_repetida = qtde_rep
+        
+
+print (mais_repetida)

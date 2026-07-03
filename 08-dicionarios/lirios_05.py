@@ -1,4 +1,3 @@
-
 texto = """Procurar a nossa felicidade através da felicidade dos outros - 
 aconselhava Olívia noutra carta sem data. - Não estou pregando o 
 ascetismo, a santidade, não estou elogiando o puro espírito de 
@@ -36,4 +35,12 @@ print (f"O texto tem {len(palavras)} palavras!")
 contagem = {}
 for palavra in palavras:
     contagem[palavra] = contagem.get(palavra,0) + 1
-print (contagem)
+
+mais_repetida = -1
+for palavra in contagem.keys():
+    qtde_rep = contagem[palavra]
+    if  qtde_rep > mais_repetida:
+        mais_repetida = qtde_rep
+        palavra_mais_rep = palavra
+
+print (palavra, mais_repetida)
