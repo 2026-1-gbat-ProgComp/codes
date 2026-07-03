@@ -5,6 +5,9 @@ def obtem_temperatura():
     temperatura = 27 - (valor_adc - 0.706) / 0.001721
     return temperatura
 
+sensor_temp = machine.ADC(4)
+fator_conversao = 3.3 / 65535
+
 while True:
     temperatura = obtem_temperatura()
     print (temperatura)
